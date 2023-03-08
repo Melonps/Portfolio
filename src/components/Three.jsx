@@ -38,9 +38,9 @@ export default function Model() {
         {/*  キャンバスの背景職 */}
         <color attach="background" args={['#f0f0f0']} />
         {/*  マウスのコントロールの追加 */}
-        {/*
+        
         <OrbitControls target={[0, 1, 0]} />
-        */}
+        
         <group position={[0, -0.5, 0]} rotation={[0, -0.75, 0]}>
           <RandomizedLight position={[0, 10, 0]} intensity={1.0} />
         </group>

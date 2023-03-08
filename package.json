@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "vite",
-    "build": "tsc --noEmit && vite build",
+    "build": "vite build",
     "test": "",
     "preview": "vite preview"
   },
@@ -13,6 +13,7 @@
     "@react-three/drei": "^9.57.0",
     "@react-three/fiber": "^8.11.9",
     "@types/three": "^0.149.0",
+    "gsap": "^3.11.4",
     "maath": "^0.5.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

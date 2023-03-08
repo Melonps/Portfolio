@@ -1,20 +1,10 @@
+
 export function Overlay() {
   return (
     <>
-      <div className="char" style={{ top: 40, left: 40 }}>
-        A
-      </div>
-      <div className="char" style={{ top: 40, left: '15vw' }}>
-        M
-      </div>
-      <div className="char" style={{ top: '20vw', left: 40 }}>
-        S
-      </div>
-      <div className="char" style={{ top: '20vw', left: '15vw' }}>
-        E
-      </div>
-      <div className="char" style={{ top: '20vw', left: '30vw' }}>
-        L
+      <div className="char" style={{ bottom: 40, right: 40 }}>
+        PRO<br></br>
+        CREATE
       </div>
       <div style={{ position: 'absolute', top: 40, right: 160, fontSize: '15px', textAlign: 'right' }}>
         A DEV
