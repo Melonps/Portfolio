@@ -20,7 +20,7 @@ import {
 
 
 export default function Model() {
-  const gltf = useLoader(GLTFLoader, './room2.glb')
+  const gltf = useLoader(GLTFLoader, './room.glb')
   const [perfSucks, degrade] = useState(false)
 
   return (
@@ -37,14 +37,11 @@ export default function Model() {
         <ambientLight />
         {/*  キャンバスの背景職 */}
         <color attach="background" args={['#f0f0f0']} />
-        {/*  マウスのコントロールの追加 */}
-        
-        <OrbitControls target={[0, 1, 0]} />
+
         
         <group position={[0, -0.5, 0]} rotation={[0, -0.75, 0]}>
           <RandomizedLight position={[0, 10, 0]} intensity={1.0} />
         </group>
-        <Stats />
         <Env perfSucks={perfSucks} />
       </Canvas>
     </>
@@ -62,6 +59,9 @@ function Env({ perfSucks }) {
       easing.damp3(ref.current.rotation, [Math.PI / 2, 0, state.clock.elapsedTime / 5 + state.pointer.x], 0.2, delta)
       //easing.damp3(state.camera.position, [Math.sin(state.pointer.x / 4) * 9, 1.25 + state.pointer.y, Math.cos(state.pointer.x / 4) * 9], 1, delta)
       easing.damp3(state.camera.position, [-30, 24, -30], 1, delta)
+      easing.damp3(state.camera.position, [Math.sin(state.pointer.x) * (-30), 1.25 + state.pointer.y*20, Math.cos(state.pointer.x) * (-30)], 0.5, delta)
+      //console.log(state.pointer.x)
+      
       state.camera.lookAt(0, 5, 0)
     }
   })
@@ -79,7 +79,7 @@ function Env({ perfSucks }) {
         <Lightformer intensity={0.5} rotation-y={-Math.PI / 2} position={[10, 1, 0]} scale={[50, 2, 1]} />
       </group>
       <group ref={ref}>
-        <Lightformer intensity={5} form="ring" color="red" rotation-y={Math.PI / 2} position={[-5, 2, -1]} scale={[10, 10, 1]} />
+        <Lightformer intensity={5} form="ring" color="#FF0300" rotation-y={Math.PI / 2} position={[-5, 2, -1]} scale={[10, 10, 1]} />
       </group>
     </Environment>
   )

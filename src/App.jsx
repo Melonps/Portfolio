@@ -3,9 +3,13 @@ import { useEffect, useState } from "react";
 
 import Model from './components/Three'
 import { Overlay } from './components/Overlay'
-import  Menu  from './components/Menu'
+import Menu from './components/Menu'
+
+import About from './views/About'
+
+
 import { Lines } from 'react-preloaders'
-import './styles/app.scss'
+import './app.scss'
 
 
 function App() {
@@ -22,14 +26,15 @@ function App() {
     
     <div className='App'>
       <Menu></Menu>
-      <section className="hero" >
-        <div className="hero-wrapper" style={{ width: "100vw", height: "100vh" }}>
-          <Model />
-          <Overlay />
-        </div>
-          
-      </section>
+      <section className="Hero" >
+      <div className='background' style={{ width: "100%", height: "100vh" }}>
+        <Model />
+      </div>
       
+        <Overlay />  
+      </section>
+      <About></About>
+
     </div>
       
   );

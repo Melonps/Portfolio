@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "vite",
+    "start": "vite --host",
     "build": "vite build",
     "test": "",
     "preview": "vite preview"
@@ -16,8 +16,11 @@
     "gsap": "^3.11.4",
     "maath": "^0.5.2",
     "react": "^18.2.0",
+    "react-device-detect": "^2.2.3",
     "react-dom": "^18.2.0",
     "react-preloaders": "^3.0.3",
+    "react-scroll": "^1.8.9",
+    "styled-reset": "^1.7.1",
     "three": "^0.150.1"
   },
   "devDependencies": {
