@@ -1,23 +1,25 @@
 import '../styles/overlay.scss'
+import '../index.css'
 
 export function Overlay() {
   return (
     <div className='overlay'>
-      <div className="char" style={{ bottom: 90, right: "4vw" }}>
+      <h1 className="absolute bottom-20 right-10 font-bold text-2xl sm:text-6xl lg:text-9xl md:right-20 text-right" >
         PRO<br/>
         CREATE
-      </div>
-      <div style={{ position: 'absolute', top: 40, left: "8vw", textAlign: 'left' }}>
+      </h1>
+      <div className='absolute top-10 left-10 sm:text-sm md:text-lg md:left-20'>
         A DEV
         <br />
         UPDATED
       </div>
-      <div style={{ position: 'absolute', top: 40, left: "20vw", textAlign: 'right', fontVariantNumeric: 'tabular-nums' }}>
+      <div className='absolute top-10 left-28 text-right sm:text-sm md:left-56  md:text-lg'>
         —
         <br />
         08/01/23
       </div>
-      <div style={{ position: 'absolute', bottom: 90, left: "8vw" }}>
+
+      <div className='absolute bottom-20 left-10 sm:text-sm md:text-lg md:left-20'>
         Runtime caustics and soft shadows,
         <br />
         for more realism on the web.

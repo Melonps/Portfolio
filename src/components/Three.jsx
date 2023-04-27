@@ -3,6 +3,8 @@ import { Canvas, useFrame, useLoader } from '@react-three/fiber'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import { easing } from 'maath'
 import { useRef, useState } from 'react'
+import { lazy, Suspense } from 'react'
+import { Lines } from 'react-preloaders'
 import {
   useGLTF,
   Center,
@@ -25,7 +27,7 @@ export default function Model() {
 
   return (
     <>
-
+      <Suspense fallback={<p>test</p>}>
       <Canvas
         shadows
         eventSource={document.getElementById('root')}
@@ -43,7 +45,8 @@ export default function Model() {
           <RandomizedLight position={[0, 10, 0]} intensity={1.0} />
         </group>
         <Env perfSucks={perfSucks} />
-      </Canvas>
+        </Canvas>
+        </Suspense>
     </>
   )
   

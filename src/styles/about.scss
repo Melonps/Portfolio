@@ -9,10 +9,11 @@
 .me-svg-wrapper{
     position: absolute;
     top: 0;
+    min-width: 1000px;
     width: 100%;
+    overflow: hidden;
     z-index: 1;
     img {
-
         margin-left: auto;
         width: 60%;
         
@@ -34,4 +35,9 @@
     overflow: hidden;
     top: 80px;
     left: 8vw;
+}
+
+.more-button {
+    background: #FF5351;
+
 }

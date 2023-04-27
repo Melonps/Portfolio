@@ -1,8 +1,7 @@
 @import "variables";
 .menu-trigger {
 	position: fixed;
-	width: 50px;
-	height: 50px;
+	width: 2rem;
 	top: 5vh;
 	right: 4vw;
 	cursor: pointer;
@@ -17,7 +16,6 @@
 		transition: all .4s;
 		height: 3px;
 		border-radius: 2px;
-		background-color: $text-color-Black;
 		width: 100%;
 		
 
@@ -58,12 +56,13 @@
 	}
 	
 }
+
 .menu-bg {
 	position: fixed;
+	
 	width: 50%;
 	height: 25%;
 	margin: auto;
-	
 	z-index: 3;
 	/*丸の形*/
 
@@ -71,7 +70,7 @@
 	padding: 30px;
 
 	border-radius: 15px;
-	background-color: rgba(255, 255, 255, 0.027);
+	background-color: rgba(0, 0, 0, 0.747);
 	/* 背景色 */
 	border: 1px solid rgba(255, 255, 255, 0.4);
 	/* ボーダー */
@@ -82,8 +81,7 @@
 	transform: scale(0);
 
 	/*scaleをはじめは0に*/
-	top: 5vh;
-	right: 4vw;
+	inset: 0;
 	/*50%から円の半径を引いた値*/
 	transition: all .4s;
 	-webkit-backdrop-filter: blur(15px);
@@ -108,9 +106,8 @@
 	width: 1em;
 	height: 1em;
 	position: absolute;
-	transform: rotate(90deg);
-	top:40%;
-	right: 0%;
+	top:25%;
+	right: 50%;
 	
 }
 
