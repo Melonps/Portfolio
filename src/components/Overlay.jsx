@@ -8,26 +8,26 @@ export function Overlay() {
         PRO<br/>
         CREATE
       </h1>
-      <div className='absolute top-10 left-10 sm:text-sm md:text-lg md:left-20'>
+      <div className='absolute top-10 left-10 sm:text-sm md:text-lg md:left-20 font-medium'>
         A DEV
         <br />
         UPDATED
       </div>
-      <div className='absolute top-10 left-28 text-right sm:text-sm md:left-56  md:text-lg'>
-        —
+      <div className='absolute top-10 left-28 text-right sm:text-sm md:left-56  md:text-lg font-medium'>
+        22/12/28
         <br />
-        08/01/23
+        23/04/28
       </div>
 
-      <div className='absolute bottom-20 left-10 sm:text-sm md:text-lg md:left-20'>
-        Runtime caustics and soft shadows,
+      <div className='absolute bottom-20 left-10 sm:text-sm md:text-lg md:left-20 font-medium'>
+        Banriのポートフォリオサイト
         <br />
-        for more realism on the web.
+        経歴、制作物、スキルをまとめています
         <br />
         <br />
         <div style={{ position: 'relative', marginTop: 10, display: 'inline-block' }}>
-          <a style={{ fontWeight: 600, letterSpacing: 2 }} href="https://github.com/pmndrs/drei#caustics">
-            DOCUMENTATION
+          <a style={{ fontWeight: 600, letterSpacing: 1 }} href="https://github.com/pmndrs/drei#caustics">
+            Thank you for coming!
           </a>
           <div style={{ marginTop: 6, height: 2.5, width: '100%', background: '#3e3e3d' }} />
         </div>

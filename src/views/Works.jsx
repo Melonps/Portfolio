@@ -74,8 +74,8 @@ const Card = ({ title, detail, image, list}) => {
 const Works= () => {
     return (
         <section className='min-h-screen items-center'>
-            <h2 className='font-bold text8xl mb-32 text-center'>Works</h2> 
-            <div className="mt-2 flex flex-wrap items-center  self-start self-center justify-center">
+            <h2 className='font-bold text-6xl mb-16 text-center lg:text-8xl'>Works</h2> 
+            <div className="mt-2 flex flex-wrap items-center self-center justify-center">
                 <Card
                     title="My Terminal"
                     detail="BehaviorTracking

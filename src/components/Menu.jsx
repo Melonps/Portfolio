@@ -14,12 +14,12 @@ function Menu() {
     }
     return (
         <>
-            
-            <div className={menuactive ? 'menu-trigger _active ' : 'menu-trigger'} onClick={menuToggle}>
-                    <span className="bg-dark"></span>
-                    <span className="bg-dark"></span>
-                    <span className="bg-dark"></span>
+            <div className={menuactive ? 'menu-trigger _active ' : 'menu-trigger'} >
+                <span className="bg-dark"></span>
+                <span className="bg-dark"></span>
+                <span className="bg-dark"></span>
             </div>
+            
 
             <div className={menuactive ? "menu-bg min-w-[70vw] sm:min-w-[90vw] rounded-lg flex flex-col items-center _active" : "menu-bg"}>
                 {/*
