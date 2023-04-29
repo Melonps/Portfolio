@@ -84,7 +84,7 @@ export const KakeLogo = ({ className }) => {
             xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 0 416 146"
             height="5em"
-            className={`h-auto  ml-1 ${className}`}
+            className={`h-auto w-80 ml-1 ${className}`}
         >
             <path d="M291 91C290.448 91 290 91.4477 290 92C290 92.5523 290.448 93 291 93L291 91ZM291 93L369 93L369 91L291 91L291 93Z" fill="#FE5351"/>
             <path d="M85 91C84.4477 91 84 91.4477 84 92C84 92.5523 84.4477 93 85 93V91ZM85 93H158V91H85V93Z" fill="#FE5351"/>

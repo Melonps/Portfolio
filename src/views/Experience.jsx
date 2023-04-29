@@ -39,12 +39,12 @@ function Experience() {
     
     return (
         <div className='my-64'>
-            <h2 className='font-bold text-6xl mb-16 text-center lg:text-8xl'>Experience</h2>    
+            <h2 className='font-bold text-4xl mb-16 text-center lg:text-8xl'>Experience</h2>    
             
             <div ref={ref} className='w-[65%] mx-auto relative'>
                 <motion.div
                     style={{ scaleY: scrollYProgress }}
-                    className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top'></motion.div>
+                    className='absolute left-9 top-1 w-[4px] h-full bg-dark origin-top'></motion.div>
                     <ui className="w-full flex flex-col items-start justify-between ml-4">
                         
                         <Details
@@ -54,46 +54,6 @@ function Experience() {
                             address="tadd"
                             companyLink="tes"
                             work="自治会(生徒会)に入り、学年代表を担当"
-                        />
-                        <Details
-                            positon="test"
-                            compony="彦根東"
-                            time="2022"
-                            address="tadd"
-                            companyLink="tes"
-                            work="自治会(生徒会)に入り、学年代表を担当"
-                        />
-                        <Details
-                            positon="test"
-                            compony="彦根東"
-                            time="2022"
-                            address="tadd"
-                            companyLink="tes"
-                            work="自治会(生徒会)に入り、学年代表を担当"
-                        />
-                        <Details
-                            positon="test"
-                            compony="彦根東"
-                            time="2022"
-                            address="tadd"
-                            companyLink="tes"
-                            work="自治会(生徒会)に入り、学年代表を担当"
-                        />
-                        <Details
-                            positon="test"
-                            compony="彦根東"
-                            time="2022"
-                            address="tadd"
-                            companyLink="tes"
-                            work="自治会(生徒会)に入り、学年代表を担当tttt"
-                        />
-                        <Details
-                            positon="test"
-                            compony="彦根東"
-                            time="2022"
-                            address="tadd"
-                            companyLink="tes"
-                            work="自治会(生徒会)に入り、学年代表を担当tttttttttttttttttttttttttttttttttttttttt"
                         />
                     </ui>
             </div>

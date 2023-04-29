@@ -7,7 +7,6 @@ import { useLottie } from "lottie-react";
 import PythonIcon from '../assets/icon/icons8-python.json';
 import { AwsIcon, VscodeIcon } from "../components/Icon";
 
-import '../styles/skills.scss'
 import '../index.css'
 
 const Language = ({ name, background, color }) => {
@@ -50,9 +49,9 @@ const Skills = () => {
     const { View } = useLottie(options);
     return (
         <section className='min-h-screen items-center text-dark dark:text-light sm:items-start '>
-            <h2 className='font-bold text-6xl mb-16 text-center lg:text-8xl'>Skills</h2> 
+            <h2 className='font-bold text-4xl mb-16 text-center lg:text-8xl'>Skills</h2> 
             <div className='m-auto w-10/12'>
-                <div className='flex flex-col items-center self-center w-full text-center my-16'>
+                <div className='flex flex-col text-lg items-center self-center w-full text-center my-16'>
                     <Stack direction="row" alignItems="center" gap={0}>
                         <h2 className='font-bold  text-center'>Basic</h2>
                         <VscodeIcon/>
@@ -62,7 +61,7 @@ const Skills = () => {
                             background="#9313" color="#444"
                     />
                 </div>
-                <div className='flex flex-col items-center self-center w-full text-center my-16'>
+                <div className='flex flex-col text-lg items-center self-center w-full text-center my-16'>
                     <Stack direction="row" alignItems="center" gap={0}>
                         <h2 className='font-bold  text-center'>Web Develop</h2>
                         <NpmIcon/>
@@ -72,7 +71,7 @@ const Skills = () => {
                             background="#FF5351" color="#fff"
                     />
                 </div>
-                <div className='flex flex-col items-center self-center w-full text-center my-16'>
+                <div className='flex flex-col text-lg items-center self-center w-full text-center my-16'>
                     <Stack direction="row" alignItems="center" gap={0}>
                         <h2 className='font-bold  text-center'>Deep Learning</h2>
                         <>{View}</>
@@ -82,7 +81,7 @@ const Skills = () => {
                         background="#9cd6c3" color="#3E3E3D"
                     />
                 </div>
-                <div className='flex flex-col items-center self-center w-full text-center my-16'>
+                <div className='flex flex-col text-lg items-center self-center w-full text-center my-16'>
                     <Stack direction="row" alignItems="center" gap={0}>
                         <h2 className='font-bold  text-center'>AWS</h2>
                         <AwsIcon/>
