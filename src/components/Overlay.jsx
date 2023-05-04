@@ -18,15 +18,14 @@ export function Overlay() {
         <br />
         23/04/28
       </div>
-
       <div className='absolute bottom-20 left-10 sm:text-sm md:text-lg md:left-20 font-medium'>
-        Banriのポートフォリオサイト
+        Kakeのポートフォリオサイト
         <br />
         経歴、制作物、スキルをまとめています
         <br />
         <br />
         <div style={{ position: 'relative', marginTop: 10, display: 'inline-block' }}>
-          <a style={{ fontWeight: 600, letterSpacing: 1 }} href="https://github.com/pmndrs/drei#caustics">
+          <a style={{ fontWeight: 600, letterSpacing: 1 }} href="https://github.com/Melonps">
             Thank you for coming!
           </a>
           <div style={{ marginTop: 6, height: 2.5, width: '100%', background: '#3e3e3d' }} />

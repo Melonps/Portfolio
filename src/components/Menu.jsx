@@ -19,8 +19,6 @@ function Menu() {
                 <span className="bg-dark"></span>
                 <span className="bg-dark"></span>
             </div>
-            
-
             <div className={menuactive ? "menu-bg min-w-[70vw] sm:min-w-[90vw] rounded-lg flex flex-col items-center _active" : "menu-bg"}>
                 {/*
                 <div className='menu-wrapper'>
@@ -52,10 +50,8 @@ function Menu() {
                     smooth={true}
                     offset={-70}
                     duration={500}
-                >test
+                >
                 </Link>
-                
-                
             </div>
         </>
     )

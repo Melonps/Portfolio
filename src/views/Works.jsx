@@ -1,11 +1,11 @@
 import React, { useRef, useState } from 'react';
 
 import myterminal_logo from '../assets/image/myterminal_logo.png'
+import my_logo from '../assets/image/my_logo.png'
 import Backdrop from '@mui/material/Backdrop';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
-import Typography from '@mui/material/Typography';
 import '../index.css'
 
 
@@ -20,8 +20,9 @@ const style = {
     border: '1px solid #3E3E3D',
     boxShadow: 24,
     p: 4,
+    borderRadius: '16px',
     display: 'flex',
-    borderRadius: '16px'
+    alignItems: 'center'
 };
 
 const Card = ({ title, detail, image, list}) => {
@@ -31,14 +32,16 @@ const Card = ({ title, detail, image, list}) => {
     const handleClose = () => setOpen(false);
     const l = [];
     for (const animal of list) {
-        l.push(<li>#{animal}</li>)
+        l.push(<li>#{animal}&nbsp;&nbsp;</li>)
     }
 
-    return <li ref={ ref } className=' flex justify-center md:w-2/5 p-4 md:px-6'>
-        <div className='text-center shadow-lg shadow-primary-200 ring-primary rounded-sm hover:shadow-2xl ring-1 hover:ring-4 hover:-translate-y-3 duration-200 md:h-full bg-gray-50'
+    return <li ref={ ref } className='flex justify-center rounded-sm hover:shadow-2xl ring-1 duration-200 h-full bg-gray-50 h-68 w-3/5 md:w-2/6 ring-primary shadow-primary-200 m-8 p-4 md:px-6 shadow-lg hover:ring-4 hover:-translate-y-3'>
+        <div className='text-center'
             onClick={handleOpen}
-        >
-            <img src={image} className='w-full ' ></img>
+        >   
+            <div className='object-contain min-h-24 max-h-52 lg:max-h-96 my-0 lg:my-2'>
+                <img src={image} className='h-auto lg:h-48 w-auto' ></img>
+            </div>
             <p className='font-medium w-full text-primary'>
                 {title}
             </p>
@@ -58,21 +61,22 @@ const Card = ({ title, detail, image, list}) => {
             >
                 <Fade in={open}>
                     <Box sx={style}>
-                    <div className='relative flex w-full items-center justify-between rounded-3xl rounded-br-2xl border-dark bg-light p-12 shadow-2xl  dark:border-light dark:bg-dark   lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4 '>
-                        <div className='m-auto w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full'></div>
+                    <div className='relative flex flex-col lg:flex-row justify-center'>
+                        <div className='m-auto w-full md:w-4/6 cursor-pointer rounded-lg lg:w-1/2'>
                             <img src={image} className='h-auto w-full' ></img>
                         </div>
-                        <div className='my-16 flex w-1/2 flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6'>
+                        <div className='my-8 mx-12 flex w-full flex-col items-start text-left justify-between px-6 lg:w-1/2  lg:pl-0 lg:py-6'>
                             <div className='underline-offset-2 hover:underline'>
-                                <h2 className='font-bold text-xl mb-16 text-center lg:text-4xl'>{title}</h2>
+                                <h2 className='font-bold text-xl mb-8 text-center lg:text-4xl'>{title}</h2>
                             </div>
-                            <p className="flex text-base lg:text-xl w-1/2 flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
+                            <p className="flex text-base lg:text-xl flex-col items-start justify-between  lg:w-full lg:pl-0 lg:pt-6">
                                 {detail}
+                                <ul className='mt-2 flex items-center'>
+                                    {l}
+                                </ul>  
                             </p>
-                            <ul className='mt-2 flex items-center'>
-                                {l}
-                            </ul>    
                         </div>
+                    </div>
                     </Box>
                 </Fade>
             </Modal>
@@ -96,7 +100,7 @@ const Works= () => {
                 <Card
                     title="kakehi's Profile"
                     detail="kakehi's Profile"
-                    image={myterminal_logo}
+                    image={my_logo}
                     list={["犬", "ゴリラ", "たぬき"]}
                 ></Card>
             </div>
