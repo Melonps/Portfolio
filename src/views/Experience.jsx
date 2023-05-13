@@ -7,7 +7,7 @@ const Details = ({ positon, compony, companyLink, time, address, work }) => {
     const ref = useRef(null);
 
     return <li ref={ ref } className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-start justify-between md:w-[80%]'>
-        <LiIcon reference={ ref } />
+        <LiIcon/>
         <motion.div
             initial={{ y: 0 }}
             whileHover={{ y: -50 }}
@@ -46,7 +46,7 @@ function Experience() {
                 <motion.div
                     style={{ scaleY: scrollYProgress }}
                     className='absolute left-7 top-1 w-[4px] h-full bg-dark origin-top'></motion.div>
-                    <ui className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
+                    <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
                         <Details
                             positon="アメリカ研修"
                             compony="America in Sanfrancisco"
@@ -96,7 +96,7 @@ function Experience() {
                                 companyLink="https://med-ai.jp/"
                                 work="大阪公立大学の情報学研究科と医学研究科との共同プロジェクトに参加"
                             />
-                    </ui>
+                    </ul>
             </div>
         </div>
         

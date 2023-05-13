@@ -3,21 +3,12 @@ import { Canvas, useFrame, useLoader } from '@react-three/fiber'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import { easing } from 'maath'
 import { useRef, useState } from 'react'
-import { lazy, Suspense } from 'react'
-import { Lines } from 'react-preloaders'
+import { Suspense } from 'react'
 import {
-  useGLTF,
-  Center,
-  Caustics,
-  Stats,
   Lightformer,
-  OrbitControls,
-  Circle,
   RandomizedLight,
   Environment,
   PerformanceMonitor,
-  AccumulativeShadows,
-  MeshTransmissionMaterial
 } from '@react-three/drei'
 
 
@@ -39,8 +30,7 @@ export default function Model() {
         <ambientLight />
         {/*  キャンバスの背景職 */}
         <color attach="background" args={['#f0f0f0']} />
-
-        
+        <PerformanceMonitor onDecline={() => degrade(true)} />
         <group position={[0, -0.5, 0]} rotation={[0, -0.75, 0]}>
           <RandomizedLight position={[0, 10, 0]} intensity={1.0} />
         </group>

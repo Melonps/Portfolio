@@ -6,6 +6,7 @@ import { NpmIcon } from '../components/Icon';
 import { useLottie } from "lottie-react";
 import PythonIcon from '../assets/icon/icons8-python.json';
 import { AwsIcon, VscodeIcon } from "../components/Icon";
+import bgp1 from '../assets/image/pattern01.png'
 
 import '../index.css'
 
@@ -37,9 +38,6 @@ const Language_list = ({ list, background ,color }) => {
     )
 }
 
-
-
-
 const Skills = () => {
     const options = {
         animationData: PythonIcon,
@@ -48,7 +46,7 @@ const Skills = () => {
 
     const { View } = useLottie(options);
     return (
-        <section className='min-h-screen items-center text-dark dark:text-light sm:items-start '>
+        <section className='min-h-screen items-center text-dark dark:text-light sm:items-start ' style={{ backgroundImage: `url(${bgp1})` }}>
             <h2 className='font-bold text-4xl mb-16 text-center lg:text-8xl'>Skills</h2> 
             <div className='m-auto w-10/12'>
                 <div className='flex flex-col text-lg items-center self-center w-full text-center my-16'>
