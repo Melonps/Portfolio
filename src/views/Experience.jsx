@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { motion, useScroll } from "framer-motion"
 import '../index.css'
 import LiIcon from '../components/LiIcon';
+import bgp3 from '../assets/image/pattern03.png'
 
 const Details = ({ positon, compony, companyLink, time, address, work }) => {
     const ref = useRef(null);
@@ -39,8 +40,8 @@ function Experience() {
     )
     
     return (
-        <div className='my-64'>
-            <h2 className='font-bold text-4xl mb-16 text-center lg:text-8xl'>Experience</h2>    
+        <section className='min-h-screen items-center py-20 text-dark' style={{ backgroundImage: `url(${bgp3})` }}>
+            <h2 className='font-bold text-4xl mb-16 my-20 text-center lg:text-8xl'>Experience</h2>    
             
             <div ref={ref} className='w-[65%] mx-auto relative'>
                 <motion.div
@@ -98,7 +99,7 @@ function Experience() {
                             />
                     </ul>
             </div>
-        </div>
+        </section>
         
     )
     

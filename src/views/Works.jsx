@@ -1,8 +1,14 @@
 import React, { useRef, useState } from 'react';
 
-import myterminal_logo from '../assets/image/myterminal_logo.png'
-import my_logo from '../assets/image/my_logo.png'
-import doushiti_HP from '../assets/image/doushiti_HP.jpg'
+import card_myterminal from '../assets/image/card_myterminal.png'
+import card_portfolio from '../assets/image/card_portfolio.png'
+import card_doushici from '../assets/image/card_doushici.png'
+import card_cd from '../assets/image/card_cd.png'
+import card_gensumgraph from '../assets/image/card_gensumgraph.png'
+import card_kaggle from '../assets/image/card_kaggle.png'
+import card_signate from '../assets/image/card_signate.png'
+
+import bgp4 from '../assets/image/pattern04.png'
 
 
 import Backdrop from '@mui/material/Backdrop';
@@ -38,7 +44,7 @@ const Card = ({ title, detail, image, list, caption}) => {
         l.push(<li  key={element}>#{element}&nbsp;&nbsp;</li>)
     }
 
-    return <li ref={ ref } className='flex justify-center rounded-sm hover:shadow-2xl ring-1 duration-200 h-full bg-gray-50 h-68 w-3/5 md:w-2/6 ring-primary shadow-primary-200 m-8 p-4 md:px-6 shadow-lg hover:ring-4 hover:-translate-y-3'>
+    return <li ref={ ref } className='flex justify-center rounded-sm bg-white hover:shadow-2xl ring-1 duration-200 h-full bg-gray-50 h-68 w-3/5 md:w-2/6 ring-primary shadow-primary-200 m-8 p-4 md:px-6 shadow-lg hover:ring-4 hover:-translate-y-3'>
         <div className='text-center'
             onClick={handleOpen}
         >   
@@ -91,29 +97,50 @@ const Card = ({ title, detail, image, list, caption}) => {
 
 const Works= () => {
     return (
-        <section className='min-h-screen items-center'>
-            <h2 className='font-bold text-4xl mb-16 text-center lg:text-8xl'>Works</h2> 
+        <section className='min-h-screen items-center py-20' style={{ backgroundImage: `url(${bgp4})` }}>
+            <h2 className='font-bold text-4xl mb-16 my-20 text-center lg:text-8xl'>Works</h2> 
             <div className="mt-2 flex flex-wrap items-center self-center justify-center">
                 <Card
                     title="My Terminal"
                     detail="Chromeのトップ画面をオシャレにしたい！から始まった趣味のプロジェクト。カスタマイズ性を最も重要視し、あなた好みの"
-                    image={myterminal_logo}
+                    image={card_myterminal}
                     list={["vue", "Firebase", "Bootstrap"]}
                     caption="web開発"
                 ></Card>
                 <Card
-                    title="kakehi's Profile"
-                    detail="kakehi's Profile"
-                    image={my_logo}
-                    list={["React", "vite", "tailwindcss", "framer-motion", "React Three Fiber"]}
-                    caption="web開発"
+                    title="Kaggle"
+                    detail="Chromeのトップ画面をオシャレにしたい！から始まった趣味のプロジェクト。カスタマイズ性を最も重要視し、あなた好みの"
+                    image={card_kaggle}
+                    list={["vue", "Firebase", "Bootstrap"]}
+                    caption="データサイエンス"
                 ></Card>
                 <Card
                     title="オカシヤドウシチHP制作"
                     detail="kakehi's Profile"
-                    image={doushiti_HP}
+                    image={card_doushici}
                     list={["React", "vite", "tailwindcss"]}
                     caption="web開発 & now developing"
+                ></Card>
+                <Card
+                    title="kakehi's Profile"
+                    detail="kakehi's Profile"
+                    image={card_portfolio}
+                    list={["React", "vite", "tailwindcss", "framer-motion", "React Three Fiber"]}
+                    caption="web開発"
+                ></Card>
+                <Card
+                    title="オンラインサーベイページ"
+                    detail="kakehi's Profile"
+                    image={card_gensumgraph}
+                    list={["React", "vite", "tailwindcss"]}
+                    caption="web開発 & now developing"
+                ></Card>
+                <Card
+                    title="SIGNATE"
+                    detail="kakehi's Profile"
+                    image={card_signate}
+                    list={["React", "vite", "tailwindcss"]}
+                    caption="データサイエンス"
                 ></Card>
             </div>
             
