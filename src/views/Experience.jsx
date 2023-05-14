@@ -42,7 +42,7 @@ function Experience() {
     return (
         <section className='min-h-screen items-center py-20 text-dark' style={{ backgroundImage: `url(${bgp3})` }}>
             <h2 className='font-bold text-4xl mb-16 my-20 text-center lg:text-8xl'>Experience</h2>    
-            
+            <p className='text-center my-10 mx-10'>簡単な経歴についてまとめています。</p>
             <div ref={ref} className='w-[65%] mx-auto relative'>
                 <motion.div
                     style={{ scaleY: scrollYProgress }}
@@ -51,26 +51,26 @@ function Experience() {
                         <Details
                             positon="アメリカ研修"
                             compony="America in Sanfrancisco"
-                            time="2017"
-                            address="8-9"
+                            time="2018"
+                            address="高校2年 夏"
                             companyLink="https://missioncollege.edu/"
-                            work="1か月間サンフランシスコに滞在。スタンフォードやAppleの見学や、Mission Collegeでs当時行っていた研究を発表した。"
+                            work="1か月間サンフランシスコに滞在。スタンフォードやAppleの見学や、Mission Collegeで当時行っていた研究を発表した。"
                         />
                         <Details
                             positon="滋賀県立彦根東高校 卒業"
                             compony="滋賀県"
                             time="2019"
-                            address="高校3年"
+                            address="高校3年 春"
                             companyLink="http://www.hikonehg-h.shiga-ec.ed.jp/"
                             work="自治会(生徒会)に入り、学年代表を担当"
                         />
                         <Details
                                 positon="大阪府立大学 入学"
-                                compony="滋賀県"
+                                compony="大阪府"
                                 time="2019"
                                 address="学部1年"
                                 companyLink="http://www.eng.osakafu-u.ac.jp/school/school_computer_science/school_computer_science"
-                                work="とにかく音楽のことばかり考えてました"
+                                work="当時は音楽とweb開発ばかりに没頭してた記憶があります。"
                         />
                         <Details
                                 positon="正指揮者に就任"
@@ -86,7 +86,7 @@ function Experience() {
                                 time="2022"
                                 address="修士１年"
                                 companyLink="https://www.omu.ac.jp/i/dci/"
-                                work="無事に卒論を終え、華の大学院生活"
+                                work="無事に卒論を終え、華と激務の大学院生活！"
                                 
                         />
                         <Details
@@ -95,7 +95,7 @@ function Experience() {
                                 time="2023"
                                 address="修士１年"
                                 companyLink="https://med-ai.jp/"
-                                work="大阪公立大学の情報学研究科と医学研究科との共同プロジェクトに参加"
+                                work="大阪公立大学の情報学研究科と医学研究科との共同プロジェクトに参加。"
                             />
                     </ul>
             </div>

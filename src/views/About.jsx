@@ -22,13 +22,13 @@ function About() {
                                 <span>学歴</span>：大阪府立大学 卒業 →  大阪公立大学大学院 在学中<br />
                                 <span>専門</span>：基幹情報学 知能情報学分野<br/>
                                 <span>部活</span>：吹奏楽（正指揮者）、コンピューターサークル<br/>
-                                <span>特技</span>：PCを用いた作曲(CDも販売してます！)<br /><br />
+                                <span>特技</span>：PCを用いた作曲(CDも販売してます！)、3Dモデリング、ピアノ、ギター<br /><br />
                                 <span>研究について</span><br />
-                                人間×情報工学の分野で研究しています<br />
-                                Web開発とPythonによる機械学習ができます<br /><br />
+                                人間×情報工学の分野で研究しています。<br />
+                                Web開発とPythonによる機械学習ができます。<br /><br />
                                 <span>学士</span>
                                     <br />
-                                    視覚障害者のためのグラフ要約システムの提案をし、Pythonと機械学習を用いてモデルを設計しました。また、AWSを用いたwebアプリで提案手法の有効性を検証しました<br />
+                                    視覚障害者のためのグラフ要約システムの提案をし、Pythonと機械学習を用いてモデルを設計しました。<br />また、AWSを用いたwebアプリで提案手法の有効性を検証しました。<br />
 
                                 
                                 </p>
@@ -40,7 +40,7 @@ function About() {
                                         Mail
                                         <OpenInNewOutlinedIcon/>
                                     </a>
-                                    <a href="https://github.co.jp/" className='ml-4 font-medium capitalize text-dark underline hover:border-dark hover:bg-transparent hover:text-primary  dark:text-light  dark:hover:text-light dark:hover:bg-dark'>
+                                    <a href="https://github.com/Melonps" className='ml-4 font-medium capitalize text-dark underline hover:border-dark hover:bg-transparent hover:text-primary  dark:text-light  dark:hover:text-light dark:hover:bg-dark'>
                                         Github
                                     </a>
                                 </div>

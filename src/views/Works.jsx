@@ -34,7 +34,7 @@ const style = {
     alignItems: 'center'
 };
 
-const Card = ({ title, detail, image, list, caption}) => {
+const Card = ({ title, detail, image, list, caption, link}) => {
     const ref = useRef(null);
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
@@ -44,7 +44,7 @@ const Card = ({ title, detail, image, list, caption}) => {
         l.push(<li  key={element}>#{element}&nbsp;&nbsp;</li>)
     }
 
-    return <li ref={ ref } className='flex justify-center rounded-sm bg-white hover:shadow-2xl ring-1 duration-200 h-full bg-gray-50 h-68 w-3/5 md:w-2/6 ring-primary shadow-primary-200 m-8 p-4 md:px-6 shadow-lg hover:ring-4 hover:-translate-y-3'>
+    return <li ref={ ref } className='flex justify-center rounded-sm bg-white hover:shadow-2xl ring-1 duration-200 h-full bg-gray-50 h-68 w-3/5 md:w-96 ring-primary shadow-primary-200 m-8 p-4 md:px-6 shadow-lg hover:ring-4 hover:-translate-y-3'>
         <div className='text-center'
             onClick={handleOpen}
         >   
@@ -74,14 +74,14 @@ const Card = ({ title, detail, image, list, caption}) => {
                 <Fade in={open}>
                     <Box sx={style}>
                     <div className='relative flex flex-col lg:flex-row justify-center'>
-                        <div className='m-auto w-full md:w-4/6 cursor-pointer rounded-lg lg:w-1/2 shadow-xl'>
+                        <a href={link} className='m-auto w-full md:w-4/6 cursor-pointer rounded-lg lg:w-1/2 shadow-xl'>
                             <img src={image} className='h-auto w-full' ></img>
-                        </div>
+                        </a>
                         <div className='my-8  m-auto md:mx-4 lg:mx-12 flex w-full flex-col items-start text-left justify-between px-6 lg:w-1/2  lg:pl-0 lg:py-6'>
                             <div className='underline-offset-2 hover:underline'>
-                                <h2 className='font-bold text-xl mb-8 text-center lg:text-4xl'>{title}</h2>
+                                <h2 className='font-bold text-xl my-4 text-center lg:text-4xl'>{title}</h2>
                             </div>
-                            <p className=" flex text-base lg:text-xl flex-col items-start justify-between  lg:w-full lg:pl-0 lg:pt-6">
+                            <p className=" flex text-base lg:text-xl flex-col items-start justify-center lg:w-full lg:pl-0 lg:pt-6">
                                 {detail}
                                 <ul className='mt-2 flex items-center font-bold text-primary flex-wrap'>
                                     {l}
@@ -99,48 +99,56 @@ const Works= () => {
     return (
         <section className='min-h-screen items-center py-20' style={{ backgroundImage: `url(${bgp4})` }}>
             <h2 className='font-bold text-4xl mb-16 my-20 text-center lg:text-8xl'>Works</h2> 
+            <p className='text-center my-10 mx-10'>制作物や取り組んだものについてまとめています。</p>
             <div className="mt-2 flex flex-wrap items-center self-center justify-center">
                 <Card
+                    title="自作オンラインサーベイ"
+                    detail="卒業研究でグラフの要約システムについて研究していますが、システムには要約の忠実度と分かりやすさにはトレードオフの関係があるという仮説に基づいています。その仮説の検証のために1000人規模のオンラインサーベイを行いました。学内外問わず2000人の人にアクセスして頂き、検証とデータセットの作成が出来ました。画像クリックからお試しできます！"
+                    image={card_gensumgraph}
+                    list={["React", "lambda(AWS)", "Amplify(AWS)","Firebase", "ReactMUI"]}
+                    caption="web開発"
+                    link = "https://prod.d2tjr4wg0jx215.amplifyapp.com/"
+                ></Card>
+                <Card
                     title="My Terminal"
-                    detail="Chromeのトップ画面をオシャレにしたい！から始まった趣味のプロジェクト。カスタマイズ性を最も重要視し、あなた好みの"
+                    detail="Chromeのトップ画面をオシャレにしたい！から始まった友人趣味のプロジェクト。カスタマイズ性を最も重要視し、好みのバックグラウンドを作成できます！DBと結び付けており、ユーザーごとのプロファイルを用意しているため自由にカスタマイズ可能！"
                     image={card_myterminal}
                     list={["vue", "Firebase", "Bootstrap"]}
-                    caption="web開発"
+                    caption="web開発 & now developing"
+                    link = ""
                 ></Card>
                 <Card
                     title="Kaggle"
-                    detail="Chromeのトップ画面をオシャレにしたい！から始まった趣味のプロジェクト。カスタマイズ性を最も重要視し、あなた好みの"
+                    detail="データサイエンスコンペに積極的に参加しています。モデルの精度を競ったり、自分の分析結果を英語で公開したりしています。あるコンテストの自分の分析結果がブロンズメダルを頂いたので載せました。Plotlyが大好きです！Plotly最高！オシャレなノートデザインにはhtmlを使っています。"
                     image={card_kaggle}
-                    list={["vue", "Firebase", "Bootstrap"]}
+                    list={["Python", "Plotly", "seaborn", "sklearn", "html"]}
                     caption="データサイエンス"
+                    link = "https://www.kaggle.com/code/melonpasta/tps-jul-2022-pca-eda-trying"
                 ></Card>
                 <Card
                     title="オカシヤドウシチHP制作"
-                    detail="kakehi's Profile"
+                    detail="お菓子屋さんのwebサイト制作を担当しています。デザインから実装、管理まで全部私担当です！大変！皆さんに公開できることを楽しみにしてます！"
                     image={card_doushici}
                     list={["React", "vite", "tailwindcss"]}
                     caption="web開発 & now developing"
+                    link = ""
                 ></Card>
                 <Card
                     title="kakehi's Profile"
-                    detail="kakehi's Profile"
+                    detail="私を知ってもらうためのwebサイトです！3Dモデリングが好きなので、サイトの最も目立つ部分には動く部屋のモデルを組み込みました。現在はこれをもっと高速にするため、努力中です(viteの癖に遅い！笑い)"
                     image={card_portfolio}
                     list={["React", "vite", "tailwindcss", "framer-motion", "React Three Fiber"]}
                     caption="web開発"
+                    link = "https://melonpass.vercel.app/"
                 ></Card>
-                <Card
-                    title="オンラインサーベイページ"
-                    detail="kakehi's Profile"
-                    image={card_gensumgraph}
-                    list={["React", "vite", "tailwindcss"]}
-                    caption="web開発 & now developing"
-                ></Card>
+                
                 <Card
                     title="SIGNATE"
-                    detail="kakehi's Profile"
+                    detail="SIGNATEにも積極的に参加しています。2022年夏のSIGNATE Student Cup 2022に友人と一緒に出場しました。大学のGPUサーバーで実験を回し、自然言語モデルの精度を競いました。私はデータの前処理とモデル作成とリーダーを務めました。また、他の3人がUbuntu、Docker、CUDAを使用した環境構築に不慣れということだったので、ドキュメントなどを作成しました。"
                     image={card_signate}
-                    list={["React", "vite", "tailwindcss"]}
+                    list={["Python", "Pytorch", "BERT", "sklearn"]}
                     caption="データサイエンス"
+                    link = "https://signate.jp/competitions/735/leaderboard"
                 ></Card>
             </div>
             

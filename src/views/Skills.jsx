@@ -48,6 +48,7 @@ const Skills = () => {
     return (
         <section className='min-h-screen items-center py-20 text-dark dark:text-light sm:items-start ' style={{ backgroundImage: `url(${bgp1})` }}>
             <h2 className='font-bold text-4xl mb-16 my-20 text-center lg:text-8xl'>Skills</h2> 
+            <p className='text-center my-10 mx-10'>得意なプログラミング言語、フレームワーク、ミドルウェアなど</p>
             <div className='m-auto w-10/12'>
                 <div className='flex flex-col text-lg items-center self-center w-full text-center my-16'>
                     <Stack direction="row" alignItems="center" gap={0}>

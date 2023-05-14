@@ -51,11 +51,11 @@ function Env({ perfSucks }) {
     if (!perfSucks) {
       easing.damp3(ref.current.rotation, [Math.PI / 2, 0, state.clock.elapsedTime / 5 + state.pointer.x], 0.2, delta)
       //easing.damp3(state.camera.position, [Math.sin(state.pointer.x / 4) * 9, 1.25 + state.pointer.y, Math.cos(state.pointer.x / 4) * 9], 1, delta)
-      easing.damp3(state.camera.position, [-30, 24, -30], 1, delta)
+      easing.damp3(state.camera.position, [-30, 24, -30], 0.5, delta)
       easing.damp3(state.camera.position, [Math.sin(state.pointer.x) * (-30), 1.25 + state.pointer.y*20, Math.cos(state.pointer.x) * (-30)], 0.5, delta)
       //console.log(state.pointer.x)
       
-      state.camera.lookAt(0, 5, 0)
+      state.camera.lookAt(0, 4, 0)
     }
   })
   // Runtime environments can be too slow on some systems, better safe than sorry with PerfMon

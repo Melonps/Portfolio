@@ -4,21 +4,21 @@ import '../index.css'
 export function Overlay() {
   return (
     <div className='overlay'>
-      <h1 className="absolute bottom-20 right-10 font-bold text-2xl sm:text-6xl lg:text-9xl md:right-20 text-right" >
+      <h1 className="absolute bottom-20 right-10 font-bold text-2xl sm:text-6xl xl:text-9xl lg:text-6xl md:right-40 text-right" >
         PRO<br/>
         CREATE
       </h1>
-      <div className='absolute top-10 left-10 sm:text-sm md:text-lg md:left-20 font-medium'>
+      <div className='absolute top-10 left-10 sm:text-sm md:text-lg md:left-40 font-medium'>
         A DEV
         <br />
         UPDATED
       </div>
-      <div className='absolute top-10 left-28 text-right sm:text-sm md:left-56  md:text-lg font-medium'>
+      <div className='absolute top-10 left-28 text-right sm:text-sm md:left-72 md:text-lg  font-medium'>
         22/12/28
         <br />
-        23/04/28
+        23/05/14
       </div>
-      <div className='absolute bottom-20 left-10 sm:text-sm md:text-lg md:left-20 font-medium'>
+      <div className='absolute bottom-20 left-10 sm:text-sm md:text-md lg:text-xl  md:left-40 font-medium'>
         Kakeのポートフォリオサイト
         <br />
         経歴、制作物、スキルをまとめています

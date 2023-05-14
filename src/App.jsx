@@ -18,7 +18,6 @@ function App() {
   return (
     
     <div className='App'>
-      <Menu></Menu>
       <section className="Hero" >
       <div className='background' style={{ width: "100%", height: "100vh" }}>
           <Model />
