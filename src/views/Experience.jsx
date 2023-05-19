@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { motion, useScroll } from "framer-motion"
 import '../index.css'
 import LiIcon from '../components/LiIcon';
-import bgp3 from '../assets/image/pattern03.png'
+import bgp1 from '../assets/image/pattern01.png'
 
 const Details = ({ positon, compony, companyLink, time, address, work }) => {
     const ref = useRef(null);
@@ -40,7 +40,7 @@ function Experience() {
     )
     
     return (
-        <section className='min-h-screen items-center py-20 text-dark' style={{ backgroundImage: `url(${bgp3})` }}>
+        <section className='min-h-screen items-center py-20 text-dark' style={{ backgroundImage: `url(${bgp1})` }}>
             <h2 className='font-bold text-4xl mb-16 my-20 text-center lg:text-8xl'>Experience</h2>    
             <p className='text-center my-10 mx-10'>簡単な経歴についてまとめています。</p>
             <div ref={ref} className='w-[65%] mx-auto relative'>
@@ -54,7 +54,7 @@ function Experience() {
                             time="2018"
                             address="高校2年 夏"
                             companyLink="https://missioncollege.edu/"
-                            work="1か月間サンフランシスコに滞在。スタンフォードやAppleの見学や、Mission Collegeで当時行っていた研究を発表した。"
+                            work="1か月間サンフランシスコに滞在。スタンフォードやAppleの見学や、当時行っていた研究を発表しました。"
                         />
                         <Details
                             positon="滋賀県立彦根東高校 卒業"
@@ -62,7 +62,7 @@ function Experience() {
                             time="2019"
                             address="高校3年 春"
                             companyLink="http://www.hikonehg-h.shiga-ec.ed.jp/"
-                            work="自治会(生徒会)に入り、学年代表を担当"
+                            work="阪大落ちちゃった..."
                         />
                         <Details
                                 positon="大阪府立大学 入学"
@@ -70,7 +70,7 @@ function Experience() {
                                 time="2019"
                                 address="学部1年"
                                 companyLink="http://www.eng.osakafu-u.ac.jp/school/school_computer_science/school_computer_science"
-                                work="当時は音楽とweb開発ばかりに没頭してた記憶があります。"
+                                work="当時は吹奏楽とサウンドエンジニアリングばかりに没頭してた記憶があります。"
                         />
                         <Details
                                 positon="正指揮者に就任"

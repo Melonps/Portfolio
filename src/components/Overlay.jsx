@@ -5,8 +5,8 @@ export function Overlay() {
   return (
     <div className='overlay'>
       <h1 className="absolute bottom-20 right-10 font-bold text-2xl sm:text-6xl xl:text-9xl lg:text-6xl md:right-40 text-right" >
-        PRO<br/>
-        CREATE
+        THE<br/>
+        CREATIVE
       </h1>
       <div className='absolute top-10 left-10 sm:text-sm md:text-lg md:left-40 font-medium'>
         A DEV

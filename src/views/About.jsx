@@ -1,11 +1,11 @@
 import React from 'react';
 import Me from '../assets/image/me2.png'
 import OpenInNewOutlinedIcon from '@mui/icons-material/OpenInNewOutlined';
-import bgp2 from '../assets/image/pattern02.png'
+import bgp1 from '../assets/image/pattern01.png'
 
 function About() {
     return (
-        <section className='flex min-h-screen py-20 text-dark' style={{ backgroundImage: `url(${bgp2})` }}>
+        <section className='flex min-h-screen py-20 text-dark' style={{ backgroundImage: `url(${bgp1})` }}>
             <div className="z-0 inline-block h-full w-full p-12  dark:bg-dark 
                 md:p-12 sm:p-8  xl:p-72 lg:p-32 !pt-0 md:pt-16 sm:!pt-16">
                 <div className='w-full items-start flex justify-center flex-low xl:flex-low'>
@@ -22,7 +22,7 @@ function About() {
                                 <span>学歴</span>：大阪府立大学 卒業 →  大阪公立大学大学院 在学中<br />
                                 <span>専門</span>：基幹情報学 知能情報学分野<br/>
                                 <span>部活</span>：吹奏楽（正指揮者）、コンピューターサークル<br/>
-                                <span>特技</span>：PCを用いた作曲(CDも販売してます！)、3Dモデリング、ピアノ、ギター<br /><br />
+                                <span>特技</span>：PCを用いた作曲(CDも販売してます！)、3Dモデリング、ロゴ＆webデザイン、ピアノ、ギター<br /><br />
                                 <span>研究について</span><br />
                                 人間×情報工学の分野で研究しています。<br />
                                 Web開発とPythonによる機械学習ができます。<br /><br />
